@@ -40,19 +40,46 @@ header {
     height: 50vh;
 } */
 
+.navigation {
+    background-color: lightslategray;
+    /* height: 3rem; */
+    padding-top: 10px;;
+}
+
+.open-slide {
+    margin-left:15px;
+}
+
 .sidebar {
     background-color: lightslategray;
-    position: absolute;
+
+    width: 0;
+    position: fixed;
     top: 150px;
     left: 20px;
+    /* we want this menu to be on top of the other content on the page */
+    z-index: 1;
+    transition: 1.0s;
     /* height: 70vh; */
     /* we still want to keep this or the closing button will not be aligned top right of the container. */
     display: flex;
 }
 
+.link-container {
+    display: block;
+    transition: 0.75s;
+}
+
 .sidebar a {
     text-decoration: none;
     color: whitesmoke;
+
+    /* display: block;
+    transition: 0.75s; */
+}
+
+.sidebar a:hover {
+    color: rgb(74, 144, 225); 
 }
 
 .link-container {
@@ -68,3 +95,7 @@ header {
     top: 0;
     right: 0;
 } */
+
+.hide {
+    display: none;
+}
