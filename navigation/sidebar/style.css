@@ -1,10 +1,11 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: white; */
 }
 
 header {
-    background-color: lightslategray;
+    background-color: black;
     text-align: center;
 }
 
@@ -37,4 +38,33 @@ header {
 /* 
 .content {
     height: 50vh;
+} */
+
+.sidebar {
+    background-color: lightslategray;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    /* height: 70vh; */
+    /* we still want to keep this or the closing button will not be aligned top right of the container. */
+    display: flex;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    margin: 30px 30px;
+}
+
+/* .button-container {
+    position: relative;
+    top: 0;
+    right: 0;
 } */
