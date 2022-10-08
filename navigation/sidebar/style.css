@@ -11,9 +11,14 @@ header {
     text-align: center;
 }
 
+hr {
+    background-color:  #074f57;
+    height: 2px;
+    border: none;
+}
+
 .container {
     /* background-color: lightgray; */
-
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -29,8 +34,6 @@ header {
     /* background-size: cover; */
     color: white;
     height: 100vh;
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
 }
 
 .hero-content {
@@ -43,9 +46,15 @@ header {
 } */
 
 .navigation {
-    background-color: lightslategray;
-    /* height: 3rem; */
-    padding-top: 10px;;
+    /* background-color: lightslategray; */
+    padding-top: 10px;
+
+    position: fixed;
+    top: 0;
+    right: 20px;
+    color: #fff;
+
+    display: flex;
 }
 
 .open-slide {
@@ -55,29 +64,26 @@ header {
 .sidebar {
     background-color: lightslategray;
 
-    /* width: 0;     */
     position: fixed;
     top: 150px;
-    /* left: 20px; */
+    /* starting position */
     left: -100%;
+
     /* we want this menu to be on top of the other content on the page */
     z-index: 1;
     transition: 1.0s;
+    /* if we have enough content then we dont need a height */
     /* height: 70vh; */
+
     /* we still want to keep this or the closing button will not be aligned top right of the container. */
     display: flex;
 }
 
 .sidebar.active {
+    /* position when "active" */
     left: 20px;
     transition: 0.5s;
 }
-
-/* 
-.link-container {
-    display: block;
-    transition: 0.75s;
-} */
 
 .sidebar a {
     text-decoration: none;
@@ -85,7 +91,7 @@ header {
 }
 
 .sidebar a:hover {
-    color: rgb(74, 144, 225); 
+    color: #074f57; 
 }
 
 .link-container {
@@ -96,13 +102,9 @@ header {
     margin: 30px 30px;
 }
 
-/* .button-container {
-    position: relative;
-    top: 0;
-    right: 0;
-} */
-
-/* .hide {
-    display: none;
-} */
-
+#close {
+    margin: 5px 5px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #074f57;
+}
