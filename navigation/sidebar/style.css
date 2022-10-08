@@ -63,6 +63,7 @@ hr {
 
 .sidebar {
     background-color: lightslategray;
+    /* width: 25vw; */
 
     position: fixed;
     top: 150px;
@@ -107,4 +108,13 @@ hr {
     padding: 5px 10px;
     color: #fff;
     background-color: #074f57;
+}
+
+.hero-text {
+    margin-top: 20px;
+    max-width: 70%;
+}
+
+.hero-text p {
+    margin: 15px 0;
 }
