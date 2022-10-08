@@ -5,11 +5,11 @@ let btnOpen = document.getElementById("open");
 
 
 btnOpen.addEventListener("click", function() {
-    sidebarMenu.style.width = "350px";
-    // sidebarMenu.classList.remove("hide"); 
+    console.log("Open");
+    sidebarMenu.classList.add("active"); 
 })
 
 btnClose.addEventListener("click", function() {
-    sidebarMenu.style.width = "0px";
-    // sidebarMenu.classList.add("hide"); 
+    console.log("Close");
+    sidebarMenu.classList.remove("active"); 
 })
