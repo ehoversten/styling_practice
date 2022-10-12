@@ -4,10 +4,15 @@
     box-sizing: border-box;
 } 
 
+body {
+    color: #6e6e6e;
+}
+
 .wrapper {
     width: 100%;
     align-content: center;
     padding-top: 5.0em;
+    padding-bottom: 5.0em;
 
     background-color: #e4eaf4;
 }
@@ -32,11 +37,22 @@
 .layout-container {
     margin: 4.0em auto;
     width: 80%;
+
+    
 }
 
-.title, .card-content {
-    border: 2px solid #6e6e6e;
-    text-align: center;
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title > h1 {
+    border: 2px solid rgb(110, 110, 110);
+    padding: 0.5em 0.5em;
+
+    /* border or no border (?) */
+    border-radius: 0.25em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 .img-container {
@@ -48,6 +64,7 @@
 
     /* debating if I prefer the flat look vs shadows */
     /* box-shadow: 0.25em 0.25em 0.5em; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -58,6 +75,10 @@
 
     background-color: lightslategray;
     padding: 4.0em 0;
+
+    /* border or no border (?) */
+    border-radius: 3.0em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .item {
@@ -72,6 +93,9 @@
 .card-content {
     background-color: #6e6e6e;
     color: #fff;
+
+    border: 2px solid #6e6e6e;
+    text-align: center;
     
     /* margin-top: 0.5em; */
     
