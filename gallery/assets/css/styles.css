@@ -7,10 +7,30 @@
 .wrapper {
     width: 100%;
     align-content: center;
+    padding-top: 5.0em;
+
+    background-color: #e4eaf4;
+}
+
+.key-container {
+    text-align: center;
+}
+
+.key-container > h1 {
+    color: #6e6e6e;
+    font-size: 8.0rem;
+    margin: 0 auto;
+
+    text-decoration: underline;
+    text-decoration-color: #6e6e6e;
+    /* text-decoration-style: double; */
+    text-decoration-thickness: 0.05em;
+    text-underline-position: under;
+
 }
 
 .layout-container {
-    margin: 0 auto;
+    margin: 4.0em auto;
     width: 80%;
 }
 
