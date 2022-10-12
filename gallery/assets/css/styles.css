@@ -5,8 +5,11 @@
 } 
 
 .wrapper {
-    background-color: lightslategray;
     width: 100%;
+}
+
+.layout-container {
+    /* margin: 50px 80px; */
 }
 
 .title, .card-content {
@@ -16,7 +19,8 @@
 
 
 .img-container > img {
-    max-width: 400px;
+    max-width: 350px;  /*  350px - 450px */
+    border-radius: 3em;
 }
 
 
@@ -24,12 +28,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    background-color: lightslategray;
 }
 
 .item {
     margin: 10px 10px;
 }
 
+/* .card {
+
+} */
+
+
 .card-content {
-    text-align: center;
+    background-color: #6e6e6e;
+    color: #fff;
+    /* text-align: center; */
+
+    margin-top: 0.5em;
 }
