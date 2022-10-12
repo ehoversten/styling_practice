@@ -6,10 +6,12 @@
 
 .wrapper {
     width: 100%;
+    align-content: center;
 }
 
 .layout-container {
-    /* margin: 50px 80px; */
+    margin: 0 auto;
+    width: 80%;
 }
 
 .title, .card-content {
@@ -30,6 +32,7 @@
     justify-content: center;
 
     background-color: lightslategray;
+    padding-top: 3.0em;
 }
 
 .item {
