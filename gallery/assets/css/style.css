@@ -8,9 +8,16 @@
     background-color: lightslategray;
 }
 
-.title {
+.col > .item{
     display: flex;
-    justify-content: center;
+    flex-basis: 100%;
+}
+
+
+.title > h1 {
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
     
     border: 2px solid #4f4f4f;
 }
@@ -46,7 +53,7 @@
     height: 350px; */
 
     /* width: 25%; */
-
+    /* flex-basis: 100%; */
     margin: 20px 10px;
 }
 
