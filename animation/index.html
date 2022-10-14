@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Key Chord Map Animation</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Next Key</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="active-key" class="hide">
+            <div class="chords-in-key">
+                <div class="card-container">
+                    <h2 class="chord-name">C</h2>
+                    <p class="chord-type">major</p>
+                </div>
+                <div class="chord-position">
+                    <h4 class="roman-num">I</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="all-keys" class="active">
+            <div class="musical-key">
+                <div class="card">
+                    <h2 class="chord-name">C</h2>
+                </div>
+                <div class="card">
+                    <div class="sharp-flat-container">
+                        <h2 class="chord-name">C# / D<span class="sharp-flat">b</span></h2>
+                        <!-- <h2 class="chord-name"><span class="sharp">C#</span>/<span class="flat">Db</span></h2> -->
+                        <!-- <h2 class="chord-name"><span class="sharp">C#</span><span class="'slash">/</span><span class="flat">Db</span></h2> -->
+
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">D</h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">D# / E<span class="sharp">b</span></h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">E</h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">F</h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">F# / G<span class="sharp">b</span></h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">G</h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">G# / A<span class="sharp">b</span></h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">A</h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">A# / B<span class="sharp">b</span></h2>
+                </div>
+                <div class="card">
+                    <h2 class="chord-name">B</h2>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

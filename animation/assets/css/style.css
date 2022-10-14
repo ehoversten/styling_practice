@@ -1,0 +1,39 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: #6e6e6e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+#all-keys {
+    width: 100%;
+}
+
+.musical-key {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.card {
+    max-height: 200px;
+    /* max-width: 150px; */
+
+    background-color: #b8b3b3;
+    /* margin: auto; */
+    margin: 0.5em 0.5em;
+    padding: 1.5em 1.5em;
+
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
