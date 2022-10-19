@@ -7,6 +7,6 @@ musicKey.addEventListener("click", function(evt) {
     console.log(keySelect);
 
     activeKey.classList.remove('hide')
-    musicKey.style.transform = 'translateY(200px)'; 
+    musicKey.style.transform = 'translateY(300px)'; 
     keyChords.style.opacity = 1; 
 })
