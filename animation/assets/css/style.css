@@ -38,6 +38,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     /* width: 80%; */
 
     /* animation: rollIn;
@@ -81,7 +82,8 @@ h2 {
 .musical-key {    
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
 
     transition: transform 1s;
 }
