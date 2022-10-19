@@ -1,5 +1,6 @@
 let musicKey = document.querySelector(".musical-key");
 let activeKey = document.getElementById("active-key");
+let keyChords = document.querySelector(".key-chords");
 
 musicKey.addEventListener("click", function(evt) {
     let keySelect = evt.target;
@@ -7,4 +8,5 @@ musicKey.addEventListener("click", function(evt) {
 
     activeKey.classList.remove('hide')
     musicKey.style.transform = 'translateY(200px)'; 
+    keyChords.style.opacity = 1; 
 })
