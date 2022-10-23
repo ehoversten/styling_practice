@@ -31,19 +31,13 @@ let chordType = [
 // Chord progression container
 let progressionList = [];
 
-const fill = document.querySelector(".fill");
+// const fill = document.querySelector(".fill");
 const empties = document.querySelectorAll(".empty");
 
 const dragChords = document.querySelectorAll(".card");
 console.log(dragChords);
 // add listeners to each card
 dragChords.forEach(chord => chord.addEventListener("dragstart", dragStart));;
-// fill listeners
-fill.addEventListener("dragstart", dragStart);
-fill.addEventListener("dragend", dragEnd);
-
-
-let dragStartIndex;
 
 for(const empty of empties) {
     empty.addEventListener('dragover', dragOver);
@@ -68,7 +62,7 @@ function dragStart(e) {
 
     e.dataTransfer.setData('text/plain', text);
     // e.dataTransfer.setData('application/json', JSON.stringify(text));
-
+    obj.setAttribute('data-chord', text);
 }
 
 function dragEnd() {
@@ -97,6 +91,7 @@ function dragDrop(e) {
     console.log('dropped');
 
     let dropzone = e.target;
+    console.log(dropzone);
     // if(!dropzone.classList.contains('dropzone')) return;
 
     e.preventDefault();
@@ -104,15 +99,11 @@ function dragDrop(e) {
     let data = e.dataTransfer.getData('text/plain');
     // let data = e.dataTransfer.getData('application/json');
     console.log(`transferred data: ${data}`);
-    console.log(data);
 
-
-    this.className = 'empty';
-    this.append(fill);
+    let draggedItem = document.querySelector(`[data-chord="${data}"]`);
+    let clone = draggedItem.cloneNode(true);
+    this.className = 'chord';
+    this.append(clone);
+    
 }
-
-
-// function createProgression() {
-
-// }
 
