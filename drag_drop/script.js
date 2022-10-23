@@ -34,6 +34,10 @@ let progressionList = [];
 const fill = document.querySelector(".fill");
 const empties = document.querySelectorAll(".empty");
 
+const dragChords = document.querySelectorAll(".card");
+console.log(dragChords);
+// add listeners to each card
+dragChords.forEach(chord => chord.addEventListener("dragstart", dragStart));;
 // fill listeners
 fill.addEventListener("dragstart", dragStart);
 fill.addEventListener("dragend", dragEnd);
@@ -49,10 +53,22 @@ for(const empty of empties) {
 };
 
 // Drag Functions
-function dragStart() {
+function dragStart(e) {
     console.log('drag start');
-    this.className += ' hold';
-    setTimeout(() => (this.className = 'invisible'), 0);
+    // console.log(e);
+    // console.log("******");
+    // console.log(e.target);
+    // console.log(e.target.firstElementChild.textContent);
+
+    let text = e.target.firstElementChild.textContent
+    let obj = e.target;
+
+    console.log("--------");
+    console.log(obj);
+
+    e.dataTransfer.setData('text/plain', text);
+    // e.dataTransfer.setData('application/json', JSON.stringify(text));
+
 }
 
 function dragEnd() {
@@ -77,8 +93,20 @@ function dragLeave() {
     this.className = 'empty';
 }
 
-function dragDrop() {
+function dragDrop(e) {
     console.log('dropped');
+
+    let dropzone = e.target;
+    // if(!dropzone.classList.contains('dropzone')) return;
+
+    e.preventDefault();
+    console.log(e.dataTransfer);
+    let data = e.dataTransfer.getData('text/plain');
+    // let data = e.dataTransfer.getData('application/json');
+    console.log(`transferred data: ${data}`);
+    console.log(data);
+
+
     this.className = 'empty';
     this.append(fill);
 }
