@@ -51,12 +51,18 @@ section {
 .selected {
     width: 200px;
     height: 200px;
-    background-color: #4f6493;
+    background-color: #6b87c3;  
     align-items: center;
-    font-size: 1.5em;
+
+    /* how to increase font size without adding margin to container? */
+    /* font-size: 1.5em; */
     font-weight: bold;
     display: flex;
     justify-content: center;
+}
+
+.selected > h2 {
+    margin: 0;
 }
 
 .fill {
