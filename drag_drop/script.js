@@ -102,7 +102,8 @@ function dragDrop(e) {
 
     let draggedItem = document.querySelector(`[data-chord="${data}"]`);
     let clone = draggedItem.cloneNode(true);
-    this.className = 'chord';
+    this.className = 'empty';
+    this.classList.add('selected');
     this.append(clone);
     
 }

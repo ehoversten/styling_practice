@@ -5,8 +5,13 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 24px;
     margin: 0;
+}
+
+span {
+    font-size: 0.75em;
 }
 
 section {
@@ -41,6 +46,14 @@ section {
     /* margin: auto 0; */
 }
 
+.selected {
+    width: 200px;
+    height: 200px;
+    background-color: #4f6493;
+    align-items: center;
+    align-content: center;
+}
+
 .fill {
     width: 200px;
     height: 200px;
@@ -53,6 +66,7 @@ section {
     margin: 0 1.5em;
     padding: 2px 2px;
     border: 3px solid #767676;
+    /* background-color: #4f6493; */
 }
 
 .hold {
