@@ -1,0 +1,38 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.audio-container {
+    border: 2px solid orangered;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    margin: auto 0;
+}
+
+.audio-container:hover {
+    background-color: rgb(254, 148, 110);
+    border: 3px solid slategray;
+
+    /* how to fade in color slowly(?) */
+    /* transform: transition; */
+}
+
+.audio-content {
+    display: flex;
+    justify-content: center;
+}
