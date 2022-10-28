@@ -22,11 +22,15 @@ main {
     border-radius: 0.5em;
     padding: 1em 2em;
     margin: auto 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition-duration: 800ms;
 }
 
 .audio-container:hover {
     background-color: rgb(254, 148, 110);
     border: 3px solid slategray;
+    
+    transform: opacity 1.5s ease;
 
     /* how to fade in color slowly(?) */
     /* transform: transition; */
