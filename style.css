@@ -11,14 +11,32 @@ body {
 }
 
 .nav-content {
-    z-index: -1;
+    display: flex;
+    position: relative;
+    z-index: 2;
 }
 
+.nav-content ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;    
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+li:hover {
+    color: orangered;
+}
 
 .skew-A {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     background-color: rgb(255, 146, 106);
 }
 
@@ -32,6 +50,7 @@ body {
     left: 0;
     content: '';
     background: inherit;
+    /* background: slategray; */
     transform-origin: top left;
     transform: skewY(10deg);
 }
