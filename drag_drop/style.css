@@ -72,6 +72,10 @@ section {
 }
 
 .empty {
+    display: flex;
+    justify-content: end;
+
+
     width: 210px;
     height: 210px;
     margin: 0 1.5em;
@@ -80,6 +84,16 @@ section {
     /* background-color: #4f6493; */
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 10px;
+}
+
+.remove {
+    background: red;
+    display: inline;
+    /* padding: 0 0.25em; */
+    border-radius: 50px;
+    font-size: 2em;
+    /* height: 25px; */
+    padding: 0.25em 0.25em;
 }
 
 .hold {
@@ -93,4 +107,22 @@ section {
 
 .invisible {
     display: none;
+}
+
+.add, .subtract {
+    background-color: rgb(255, 153, 115);
+    padding: 0.5em 0.5em;
+    border-radius: 50px;
+    margin-top: 1.5em;
+    border: 2px solid #6e6e6e;
+}
+
+.add:hover, .subtract:hover {
+    background-color: orangered;
+}
+
+.progression-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

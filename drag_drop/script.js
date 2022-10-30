@@ -33,6 +33,11 @@ let progressionList = [];
 
 // const fill = document.querySelector(".fill");
 const empties = document.querySelectorAll(".empty");
+const emptyContainer = document.querySelector(".empty-container");
+const addBtn = document.querySelector(".add");
+const subtractBtn = document.querySelector(".subtract");
+addBtn.addEventListener('click', add);
+subtractBtn.addEventListener('click', subtract);
 
 const dragChords = document.querySelectorAll(".card");
 console.log(dragChords);
@@ -104,7 +109,23 @@ function dragDrop(e) {
     let clone = draggedItem.cloneNode(true);
     this.className = 'empty';
     this.classList.add('selected');
-    this.append(clone);
     
+    console.log(clone);
+    this.append(clone);
+}
+
+function add() {
+    let newEmptyContainer = document.createElement("div");
+    newEmptyContainer.className = "empty";
+    newEmptyContainer.addEventListener('dragover', dragOver);
+    newEmptyContainer.addEventListener('dragenter', dragEnter);
+    newEmptyContainer.addEventListener('dragleave', dragLeave);
+    newEmptyContainer.addEventListener('drop', dragDrop);
+    emptyContainer.append(newEmptyContainer);
+}
+
+function subtract() {
+    let rmvEmptyContainer = document.querySelector(".empty");
+    rmvEmptyContainer.remove();
 }
 
