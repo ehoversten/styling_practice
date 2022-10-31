@@ -126,3 +126,16 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
+.maj {
+    background-color: #7fb560;
+}
+
+.min {
+    background-color: #a3ec6f;
+}
+
+.dim {
+    background-color: #84f0dc;
+}   
