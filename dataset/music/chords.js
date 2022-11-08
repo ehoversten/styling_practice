@@ -39,6 +39,7 @@ let chordsInKey = [
         romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
         relative_key: "c_major"
     },
+    // -- //
     {
         key: "g_major",
         type: "major",
@@ -61,14 +62,15 @@ let chordsInKey = [
         romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
         relative_key: "g_major"
     },
+    // -- //
     {
         key: "d_major",
         type: "major",
         title: "D major",
-        notes: ["D", "E", "F#", "G#", "A", "B", "C"],
+        notes: ["D", "E", "F#", "G", "A", "B", "C#"],
         chordType: ["maj", "min", "min", "maj", "maj", "min", "dim"],
-        chordsInKey: ["Dmaj", "Emin", "F#maj", "G#maj", "Amin", "Bmin", "Cdim"],
-        chordsInKey_short: ["G#", "Am", "Bm", "C", "D", "Em", "F#°"],
+        chordsInKey: ["Dmaj", "Emin", "F#min", "Gmaj", "Amaj", "Bmin", "C#dim"],
+        chordsInKey_short: ["D", "Em", "F#m", "G", "A", "Bm", "C#°"],
         romanValue: ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
         relative_key: "b_minor"
     },
@@ -82,5 +84,74 @@ let chordsInKey = [
         chordsInKey_short: ["Bm", "C°", "D", "Em", "F#m", "G#", "A"],
         romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
         relative_key: "d_major"
+    },
+    // -- //
+    {
+        key: "a_major",
+        type: "major",
+        title: "A major",
+        notes: ["A", "B", "C#", "D", "E", "F#", "G#"],
+        chordType: ["maj", "min", "min", "maj", "maj", "min", "dim"],
+        chordsInKey: ["Amaj", "Bmin", "C#min", "Dmaj", "Emaj", "F#min", "G#dim"],
+        chordsInKey_short: ["A", "Bm", "C#m", "D", "E", "F#m", "G#°"],
+        romanValue: ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
+        relative_key: "f#_minor"
+    },
+    {
+        key: "f#_minor",
+        type: "natural minor",
+        title: "F# minor",
+        notes: ["F#", "G#", "A", "B", "C#", "D", "E"],
+        chordType: ["min", "dim", "maj", "min", "min", "maj", "maj"],
+        chordsInKey: ["F#min", "G#dim", "Amaj", "Bmin", "C#min", "Dmaj", "Emaj"],
+        chordsInKey_short: ["F#m", "G#°", "A", "Bm", "C#m", "D", "E"],
+        romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
+        relative_key: "a_major"
+    },
+    // -- //
+    {
+        key: "e_major",
+        type: "major",
+        title: "E major",
+        notes: ["E", "F#", "G#", "A", "B", "C#", "D#"],
+        chordType: ["maj", "min", "min", "maj", "maj", "min", "dim"],
+        chordsInKey: ["Emaj", "F#min", "G#min", "Amaj", "Bmaj", "C#min", "D#dim"],
+        chordsInKey_short: ["E", "F#m", "G#m", "A", "B", "C#m", "D#°"],
+        romanValue: ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
+        relative_key: "c#_minor"
+    },
+    {
+        key: "c#_minor",
+        type: "natural minor",
+        title: "C# minor",
+        notes: ["C#", "D#", "E", "F#", "G#", "A", "B"],
+        chordType: ["min", "dim", "maj", "min", "min", "maj", "maj"],
+        chordsInKey: ["C#min", "D#dim", "Emaj", "F#min", "G#min", "Amaj", "Bmaj"],
+        chordsInKey_short: ["F#m", "G#°", "A", "Bm", "C#m", "D", "E"],
+        romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
+        relative_key: "e_major"
+    },
+    // ----------- //
+    {
+        key: "F_major",
+        type: "major",
+        title: "F major",
+        notes: ["F", "G", "A", "B♭", "C", "D", "E"],
+        chordType: ["maj", "min", "min", "maj", "maj", "min", "dim"],
+        chordsInKey: ["Fmaj", "Gmin", "Amin", "B♭maj", "Cmaj", "Dmin", "Edim"],
+        chordsInKey_short: ["F", "G", "A", "B♭", "C", "D", "E°"],
+        romanValue: ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
+        relative_key: "d_minor"
+    },
+    {
+        key: "d_minor",
+        type: "natural minor",
+        title: "D minor",
+        notes: ["D", "E", "F", "G", "A", "B♭", "C"],
+        chordType: ["min", "dim", "maj", "min", "min", "maj", "maj"],
+        chordsInKey: ["Dmin", "Edim", "Fmaj", "Gmin", "Amin", "B♭maj", "Cmaj"],
+        chordsInKey_short: ["Dm", "E°", "F", "Gm", "Am", "B♭", "C"],
+        romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
+        relative_key: "f_major"
     }
 ]
