@@ -5,8 +5,20 @@
 } 
 
 body {
-    background-color: #6e6e6e;
+    /* background-color: #6e6e6e; */
     font-family: "Roboto Black";
+
+    /* background-image: url('../img/fretboard.jpg'); */
+    /* background-image: url('../img/instruments.jpg'); */
+    background-image: url('../img/gtr_player.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-position: top; */
+    /* background-attachment: scroll; */
+
+    /* background-color: #4e4e4e; */
+    background-color: #1a390c;
+    background-blend-mode: lighten;
 }
 
 main {
