@@ -14,7 +14,7 @@ body {
     background-image: linear-gradient( rgb(243, 128, 79), rgb(66, 65, 65));
     /* background-image: linear-gradient( rgb(205, 192, 187), rgb(96, 96, 96)); */
     background-image: linear-gradient( rgb(207, 207, 207), rgb(102, 198, 70));
-    background-image: linear-gradient(45deg, rgb(207, 207, 207), rgb(102, 198, 70));
+    background-image: linear-gradient(45deg, rgb(207, 207, 207), rgb(58, 109, 41));
 }
 
 span {
