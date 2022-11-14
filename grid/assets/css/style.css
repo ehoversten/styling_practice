@@ -12,15 +12,25 @@ body {
 
 
 .grid-container {
+    border: 1px solid red;
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid red;
+    grid-gap: 1em;
+    margin: 1em auto;
+    
+    width: 80%;
+    
 }
 
-
+img {
+    width: 100%;
+    height: auto;
+}
 
 .card {
-    
+    /* max-width: 300px;
+    height: auto; */
     border: 1px solid steelblue;
 }
 
@@ -29,6 +39,6 @@ body {
 }
 
 .image-container {
-    width: 100%;
+    /* width: 100%; */
 }   
 
