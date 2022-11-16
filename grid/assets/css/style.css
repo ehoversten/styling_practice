@@ -13,6 +13,7 @@ body {
 header {
     text-align: center;
     margin: 2em auto;
+    color:#fff;
 }
 
 .grid-container {
@@ -30,8 +31,10 @@ header {
 }
 
 img {
-    width: 100%;
-    height: auto;
+    display: block;
+    width: 100%;    
+    /* height: auto; */
+
     /* max-height: 300px; */
 }
 
@@ -41,26 +44,70 @@ img {
     /* border: 1px solid black; */
     /* background: #fff; */
     /* background: #000; */
+
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover .card-content{
+    /* Animation */
+    /* transform: translateY(-150px); */
+    transform: translateY(-12rem);
+} 
+
+.card:hover .overlay {
+    /* Animation */
+    /* transform: translateY(-150px); */
+    transform: translateY(-100%);
+    /* height: 100%; */
 }
 
 .card-content {
     text-align: center;
-    position: relative;
-    margin-top: -1.5rem; 
-    background: rgb(0, 166, 255);
+    background: rgb(0, 166, 255, 0.55);
     /* color: rgb(227, 151, 74); */
     color: rgb(94, 162, 222);
     color: #fff;
+
+    /* position: relative;
+    margin-top: -1.5rem;  */
+    transform: translateY(-4.45rem);
+    margin-bottom: -5.5em;
+
     /* padding: 5px; */
     /* bottom: 0; */
+
+    /* Animation */
+    transition: transform 1s;
 }
 
 .card-content h2 {
-    padding: 10px;
+    padding: 12px;
 }
 
 .image-container {
     /* width: 100%; */
+    display: block;
+    width: 100%;
+}   
+
+.overlay {
+    position: absolute;
+    /* top: 0; */
+    /* bottom: 0; */
+    left: 0;
+    background-color: rgb(0, 166, 255, 0.55, 0.75);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+
+    text-align: center;
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
 }   
 
 /* .card:nth-of-type(1) {
