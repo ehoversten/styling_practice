@@ -1,0 +1,46 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    width: 80%;
+    min-height: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.login-container .register-container {
+    border: 2px solid black;
+    width: 40%;
+}
+
+.login-container {
+    background-color: rgb(82, 155, 214);
+    margin-right: 2em;
+}
+
+
+.register-container {
+    background-color: rgb(249, 133, 90);
+}

@@ -57,6 +57,7 @@ img {
 
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card:hover .card-content{
