@@ -11,33 +11,40 @@
     <main>
 
         <div class="container">
-            <section class="login-container">
+            <section class="login-container content">
                 <div class="text-content">
                     <h2>Login</h2>
                 </div>
-                <form action="" method="post">
-                    <label for="username">Username</label>
-                    <input id="username" type="text">
-                    <label for="password">Password</label>
-                    <input id="password" type="text">
+                <form action="/api/login" method="post">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input id="username" type="text">
+                        <label for="password">Password</label>
+                        <input id="password" type="password">
+                        <!-- <span class="validate">Invalid Credentials</span> -->
+                    </div>
+                    <button type="submit">Login</button>
                 </form>
             </section>
             
-            <section class="register-container">
+            <section class="register-container content">
                 <div class="text-content">
                     <h2>Sign Up</h2>
                 </div>
-                <form action="" method="post">
-                    <label for="first">First Name</label>
-                    <input id="first" type="text">
-                    <label for="last">Last Name</label>
-                    <input id="last" type="text">
-                    <label for="username">Username</label>
-                    <input id="username" type="text">
-                    <label for="password">Password</label>
-                    <input id="password" type="text">
-                    <label for="confirm">Confirm Password</label>
-                    <input id="confirm" type="text">
+                <form action="/api/register" method="post">
+                    <div class="input-group">
+                        <label for="first">First Name</label>
+                        <input id="first" type="text">
+                        <label for="last">Last Name</label>
+                        <input id="last" type="text">
+                        <label for="username">Username</label>
+                        <input id="username" type="text">
+                        <label for="password">Password</label>
+                        <input id="password" type="password">
+                        <label for="confirm">Confirm Password</label>
+                        <input id="confirm" type="password">
+                    </div>
+                    <button type="submit">Register</button>
                 </form>
             </section>
         </div>
