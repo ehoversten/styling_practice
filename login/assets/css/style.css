@@ -8,6 +8,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(208, 208, 208);
     color: #fff;
 }
 
@@ -118,7 +119,7 @@ button:hover {
 .reg-btn:hover {
     /* background-color:rgba(82, 155, 214, 0.75); */
     background-color:rgb(57, 143, 213);
-    color: rgb(213, 213, 213);
+    color: rgb(229, 229, 229);
     /* border: 2px solid rgb(253, 111, 60); */
 }
 
