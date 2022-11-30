@@ -2,16 +2,64 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-nav {
+body {
+    min-height: 100vh;
+    position: relative;
+}
 
+/* nav {
+
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container h2 {
+    margin-top: 3rem;
 }
 
 main {
-
+    min-height: 100vh;
+    background-color: lightblue;
+    padding-bottom: 5rem;
 }
 
 footer {
-    max-height: 5em;
+    background-color: steelblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1em 2em;
+}
+
+.wrapper {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    margin-right: 4em;
+    /* justify-content: space-around; */
+}
+
+.contact {
+    max-width: 30%;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 3em;
+}
+
+.links ul li {
+    margin-bottom: 0.5em;
 }
