@@ -1,0 +1,17 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+nav {
+
+}
+
+main {
+
+}
+
+footer {
+    max-height: 5em;
+}

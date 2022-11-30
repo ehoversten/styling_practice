@@ -58,7 +58,8 @@ section {
 .selected {
     width: 200px;
     height: 200px;
-    background-color: #6b87c3;  
+    background-color: #83b9f1;  
+    /* background-color: #f18383;   */
     align-items: center;
 
     /* how to increase font size without adding margin to container? */
@@ -128,7 +129,9 @@ section {
 }
 
 .add:hover, .subtract:hover {
-    background-color: rgb(250, 134, 92);
+    /* background-color: rgb(250, 134, 92); */
+    background-color: #83b9f1;  
+    background-color: #cbcbcb;  
 }
 
 .progression-container {
