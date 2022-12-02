@@ -200,4 +200,27 @@ let chordsInKey = [
         romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
         relative_key: "b_flat_major"
     },
+    // ----------- //
+    {
+        key: "e_flat_major",
+        type: "major",
+        title: "E♭ major",
+        notes: ["E♭", "F", "G", "A♭", "B♭", "C", "D"],
+        chordType: ["maj", "min", "min", "maj", "maj", "min", "dim"],
+        chordsInKey: ["E♭maj", "Fmin", "Gmin", "A♭maj", "B♭maj", "Cmin", "Ddim"],
+        chordsInKey_short: ["E♭", "Fm", "Gm", "A♭", "B♭", "Cm", "D°"],
+        romanValue: ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
+        relative_key: "c_minor"
+    },
+    {
+        key: "c_minor",
+        type: "natural minor",
+        title: "C minor",
+        notes: ["C", "D", "E♭", "F", "G", "A♭", "B♭"],
+        chordType: ["min", "dim", "maj", "min", "min", "maj", "maj"],
+        chordsInKey: ["Cmin", "Ddim", "E♭maj", "Fmin", "Gmin", "A♭maj", "B♭maj"],
+        chordsInKey_short: ["Cm", "D°", "E♭", "Fm", "Gm", "A♭", "B♭"],
+        romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
+        relative_key: "e_flat_major"
+    },
 ]
