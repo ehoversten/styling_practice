@@ -131,9 +131,32 @@ let chordsInKey = [
         romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
         relative_key: "e_major"
     },
+    // -- //
+    {
+        key: "b_major",
+        type: "major",
+        title: "B major",
+        notes: ["B", "C#", "D#", "E", "F#", "G#", "A#"],
+        chordType: ["maj", "min", "min", "maj", "maj", "min", "dim"],
+        chordsInKey: ["Bmaj", "C#min", "D#min", "Emaj", "F#min", "G#min", "A#dim"],
+        chordsInKey_short: ["B", "C#m", "D#m", "E", "F#m", "G#m", "A#°"],
+        romanValue: ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
+        relative_key: "g#_minor"
+    },
+    {
+        key: "g#_minor",
+        type: "natural minor",
+        title: "G# minor",
+        notes: ["G#", "A#", "B", "C#", "D#", "E", "F#"],
+        chordType: ["min", "dim", "maj", "min", "min", "maj", "maj"],
+        chordsInKey: ["G#min", "A#dim", "Bmaj", "C#min", "D#min", "Emaj", "F#maj"],
+        chordsInKey_short: ["G#m", "A#°", "B", "C#m", "D#m", "E", "F#m"],
+        romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
+        relative_key: "b_major"
+    },
     // ----------- //
     {
-        key: "F_major",
+        key: "f_major",
         type: "major",
         title: "F major",
         notes: ["F", "G", "A", "B♭", "C", "D", "E"],
@@ -153,5 +176,28 @@ let chordsInKey = [
         chordsInKey_short: ["Dm", "E°", "F", "Gm", "Am", "B♭", "C"],
         romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
         relative_key: "f_major"
-    }
+    },
+    // ----------- //
+    {
+        key: "b_flat_major",
+        type: "major",
+        title: "B♭ major",
+        notes: ["B♭", "C", "D", "E♭", "F", "G", "A"],
+        chordType: ["maj", "min", "min", "maj", "maj", "min", "dim"],
+        chordsInKey: ["B♭maj", "Cmin", "Dmin", "E♭maj", "Fmaj", "Gmin", "Adim"],
+        chordsInKey_short: ["B♭", "Cm", "Dm", "E♭", "F", "Gm", "A°"],
+        romanValue: ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
+        relative_key: "d_minor"
+    },
+    {
+        key: "g_minor",
+        type: "natural minor",
+        title: "G minor",
+        notes: ["G", "A", "B♭", "C", "D", "E♭", "F"],
+        chordType: ["min", "dim", "maj", "min", "min", "maj", "maj"],
+        chordsInKey: ["Gmin", "Adim", "B♭maj", "Cmin", "Dmin", "E♭maj", "Fmaj"],
+        chordsInKey_short: ["Gm", "A°", "B♭", "Cm", "Dm", "E♭", "F"],
+        romanValue: ["i", "ii°", "III", "iv", "v", "VI", "VII"],
+        relative_key: "b_flat_major"
+    },
 ]
